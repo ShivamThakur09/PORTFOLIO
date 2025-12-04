@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <header>
+        <h1>SHIVAM KUMAR THAKUR</h1>
+        <p>Web Developer | Designer | Tech Enthusiast</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about" style="background-color: pink;">
+        <h2>About Me</h2>
+        <img src="IMG_20240520_113748_11zon.jpg" alt="Profile Picture" />
+        <p>Hello! I am a passionate Web Developer focused on creating modern, responsive, and user‑friendly websites. I enjoy working with HTML, CSS, JavaScript, and various frameworks. I aim to deliver clean code and visually appealing designs.</p>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-list">
+            <div class="skill-box">HTML5 & CSS3</div>
+            <div class="skill-box">JavaScript (ES6)</div>
+            <div class="skill-box">Responsive Web Design</div>
+            <div class="skill-box">UI/UX Basics</div>
+            <div class="skill-box">Java Basics</div>
+            <div class="skill-box">Database MySQL</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-list">
+            <div class="project-box">
+                <h3>Online Book Store Website</h3>
+                <p>A complete responsive website that displays books, categories and allows users to browse easily.</p>
+                <img src="project1.png" alt="Project Image" />
+            </div>
+            <div class="project-box">
+                <h3>Shopping Website</h3>
+                <p>A complete responsive website that display cloths, offers and cart and buy option, it allows user to buy cloths easily.</p>
+                <img src="project2.png" alt="Project Image" />
+            </div>
+            <div class="project-box">
+                <h3>Basic Calculator</h3>
+                <p>Interactive calculator using HTML, CSS and JavaScript.</p>
+                <img src="project3.png" alt="Project Image" />
+            </div>
+        </div>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <p>Click below to download my resume:</p>
+        <button onclick="downloadResume()">Download Resume</button>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p><strong>Email:</strong> shivam@example.com</p>
+        <p><strong>Phone:</strong> +91 9876543210</p>
+    </section>
+
+    <footer>
+        <p>© 2025 Shivam Kumar Thakur. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function downloadResume() {
+            const link = document.createElement('a');
+            link.href = 'SHIVAM KUMAR THAKUR-1 (1).docx';
+            link.download = 'Resume_Shivam.docx';
+            link.click();
+        }
+    </script>
+</body>
+</html>
